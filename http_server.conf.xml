@@ -1,0 +1,8 @@
+<configuration name="http_server.conf" description="http server info">
+	<profiles>
+		<profile>
+			<param name="http_server" value="172.18.192.106"/>
+			<param name="http_port" value="10030"/>
+		</profile>
+	</profiles>
+</configuration>
