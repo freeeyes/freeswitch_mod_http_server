@@ -69,6 +69,7 @@ bool run_lua_file(const std::string lua_json_command, std::string lua_json_retur
 
 		//获得返回值
 		lua_json_return = (const char*)stream.data;
+		switch_safe_free(stream.data);
 		switch_log_printf(SWITCH_CHANNEL_LOG, SWITCH_LOG_NOTICE, "[run_lua_file]lua_json_return=%s!\n", lua_json_return.c_str());
 		return true;
 
